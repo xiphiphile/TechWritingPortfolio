@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="AlbrechtSampleSite.css">
+
+<script type="text/javascript">
+	<!--
+	function toggle_vis(id) {
+		var e = document.getElementById(id);
+		if(e.style.display == 'block')
+			e.style.display = 'none';
+		else
+			e.style.display = 'block';
+	}
+	//-->
+</script>
+
+</head>
+
+<body>
+
+<div class="bodycontent" id="ShapeQRG">
+<H2>One Process Four Ways</h2>
+<hr>
+<p>The examples below demonstrate four ways a single process could be designed, depending on how the automation is intended to work.</p>
+<p>While the actions are the same, differences in the flow help to quickly demonstrate how the automation handles the process.</p>
+
+
+
+
+
+<div class="collapseblock"><p><a class="navlink" href="##" onclick="toggle_vis('ExclusiveFlow')"><b>Exclusive Flow</b></a></p>
+<div class="blockcollapse" id="ExclusiveFlow">
+<p>In an exclusive flow, only one of the possible choices will run. A user would need to run the bot multiple times to run more than one option.</p>
+<div style="padding-top:10px; padding-left:10px;">
+<a target="_blank" href="ExclusiveFlow.png"><img class="image-lrg" src="ExclusiveFlow.png"></a>
+</div>
+</div>
+</div>
+
+
+
+<div class="collapseblock"><p><a class="navlink" href="##" onclick="toggle_vis('LoopingFlow')"><b>Looping Flow</b></a></p>
+<div class="blockcollapse" id="LoopingFlow">
+<p>In a looping process, the same basic process runs multiple times, with the number of runs governed by a list, spreadsheet, etc... Looping processes tend to be easier to view at a glance, but may not be as detailed as a sequence.</p>
+
+<p>This is the most efficient flow option if the basic steps for multiple options will remain the same - you may not need to change the flow if new run options are added or deleted.</p>
+<div style="padding-top:10px; padding-left:10px;">
+<a target="_blank" href="LoopingFlow.png"><img class="image-lrg" src="LoopingFlow.png"></a>
+</div>
+</div>
+</div>
+
+
+<div class="collapseblock"><p><a class="navlink" href="##" onclick="toggle_vis('SequentialFlow')"><b>Sequential Flow</b></a></p>
+<div class="blockcollapse" id="SequentialFlow">
+<p>In a sequential process, the order of the processes run is laid out explicitly. It may be that the order is important for the automation to work, that the individual runs are not identical, or that the flow needs to contain details that would be lost if the steps were shown as a loop.</p>
+
+<p>A loop running by defined rules can always be expressed as a sequence, but a sequence cannot always be expressed as a loop.</p>
+
+
+<div style="padding-top:10px; padding-left:10px;">
+<a target="_blank" href="SequentialFlow.png"><img class="image-lrg" src="SequentialFlow.png"></a>
+</div>
+</div>
+</div>
+
+
+<div class="collapseblock"><p><a class="navlink" href="##" onclick="toggle_vis('ConcurrentFlow')"><b>Looping Flow</b></a></p>
+<div class="blockcollapse" id="ConcurrentFlow">
+<p>In a concurrent flow, multiple subprocesses occur simultaneously. A concurrent process requires more resources at once, sometimes including multiple machines (physical or virtual), but would be more time efficient.</p>
+<p>Some examples of when to use a concurrent flow would be:</p>
+<ul>
+<li>Launcher bot initiates multiple subprocess bots designed to run at the same time.</li>
+<li>Command sent to multiple external systems, which then report back to the host.</li>
+<li>Bot network launches multiple bots od different machines.</li>
+</ul>
+<div style="padding-top:10px; padding-left:10px;">
+<a target="_blank" href="ConcurrentFlow.png"><img class="image-lrg" src="ConcurrentFlow.png"></a>
+</div>
+</div>
+</div>
+
+<!--
+
+<div class="noteblock">
+<p><b>Note:</b> This is a note.</p>
+</div>
+<div class="exampleblock">
+<p><b>Note:</b> This is an example.</p>
+</div>
+<div class="warningblock">
+<p><b>Note:</b> This is a warning or caution.</p>
+</div>
+
+/-->
+
+</div>
+</body>
