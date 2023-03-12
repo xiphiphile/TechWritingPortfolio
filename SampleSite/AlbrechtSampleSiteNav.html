@@ -14,6 +14,11 @@
 		else
 			e.style.display = 'block';
 	}
+	
+	function reload() {
+                document.getElementByName('bodyiframe').href += '';
+            }
+            
 	//-->
 </script>
 </head>
@@ -26,9 +31,9 @@
 <div class="navcollapse" id="HeadSection1">
 <ul class="navbar">
 
-<li class="navitem"><a class="navlink" target="bodyiframe" href="ShapeQRG.html" name="ShapeQRG"><b>Flow Shape QRG</b></li>
-<li class="navitem"><a class="navlink" target="bodyiframe" href="SubProcess.html" name="SubProcess"><b>SubProcess Usage</b></li>
-<li class="navitem"><a class="navlink" target="bodyiframe" href="FourWays.html" name="FourWays"><b>One Process Four Ways</b></li>
+<li class="navitem"><a class="navlink" target="bodyiframe" href="ShapeQRG.html" name="ShapeQRG" onclick="reload(bodyiframe)"><b>Flow Shape QRG</b></li>
+<li class="navitem"><a class="navlink" target="bodyiframe" href="SubProcess.html" name="SubProcess" onclick="reload(bodyiframe)"><b>SubProcess Usage</b></li>
+<li class="navitem"><a class="navlink" target="bodyiframe" href="FourWays.html" name="FourWays" onclick="reload(bodyiframe)"><b>One Process Four Ways</b></li>
 
 </ul>
 </div>
